@@ -1,0 +1,21 @@
+canvas {
+    border: 3px solid black;
+    background-color: bisque;
+}
+
+#header {
+    background-color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#footer {
+    background-color: lightblue;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#body-center, #body-right {
+    background-color: lightblue;
+}

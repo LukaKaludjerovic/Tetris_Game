@@ -1,0 +1,16 @@
+#header {
+    background-color: lightgray;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#footer {
+    background-color: lightgray;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#level, #blocks, #instructions, #button1, #button2 {
+    background-color: lightgray;
+}

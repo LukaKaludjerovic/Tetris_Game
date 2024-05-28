@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./tetris-dodatno/bootstrap.min.css">
+        <script src="./tetris-dodatno/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="tetris-rezultati.css">
+        <script src="tetris-rezultati.js"></script>
+        <title>Tetris</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id="header" class="col-sm-12 text-center">
+                    <p>T E T R I S</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="all-results" class="col-sm-9 text-center">
+                    <h4>TOP 5 RESULTS - ALL RESULTS</h4>
+                    <table class="table table-light">
+                        <tr>
+                            <td>Position</td>
+                            <td>Name</td>
+                            <td>Score</td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td id="name1"></td>
+                            <td id="score1"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td id="name2"></td>
+                            <td id="score2"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td id="name3"></td>
+                            <td id="score3"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td id="name4"></td>
+                            <td id="score4"></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td id="name5"></td>
+                            <td id="score5"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="personal-result" class="col-sm-3 text-center">
+                    <div id="name">
+                        <br><br>
+                        NAME: 
+                    </div>
+                    <div id="score">
+                        <br><br>
+                        SCORE: 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="button" class="col-sm-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='tetris-uputstvo.html'">Go to home page!</button>
+                </div>
+            </div>
+            <div class="row">
+                <div id="footer" class="col-sm-12 text-center">
+                    <p>COPYRIGHT: Luka Kaludjerovic 2021/0041, May 2024</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

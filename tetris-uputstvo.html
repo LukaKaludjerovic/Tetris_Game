@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./tetris-dodatno/bootstrap.min.css">
+        <script src="./tetris-dodatno/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="tetris-uputstvo.css">
+        <script src="tetris-uputstvo.js"></script>
+        <title>Tetris</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id="header" class="col-sm-12 text-center">
+                    <p>T E T R I S</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="instructions" class="col-sm-12 text-center">
+                    <b>INSTRUCTIONS</b>
+                    <br><br>
+                    <p>Welcome! Thank you for playing our game!</p>
+                    <p>Firstly, you need choose the level of the game. 
+                        Blocks will fall slower or faster, depending on the chosen level.</p>
+                    <p>Secondly, you need to select all blocks you want to exist in the game.</p>
+                    <p>Control blocks by using keyboard arrows Left, Down and Right. 
+                        Left and Right arrow move block to the left or right, respectfully, 
+                        whereas Down arrow moves block down faster.</p>
+                    <p>Rotate blocks by using keys A and D. Key A rotates block counterclockwise, 
+                        whereas Key D rotates block clockwise.</p>
+                    <p>When the row is full it will disappear, while your score will be increased, 
+                        depending on which level are you playing on and with how many blocks.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="level" class="col-sm-2 text-center">
+                    <br>
+                    <b>CHOOSE LEVEL</b>
+                    <br>
+                    <select id="hardness">
+                        <option value="EASY">EASY</option>
+                        <option value="INTERMEDIATE">INTERMEDIATE</option>
+                        <option value="HARD">HARD</option>
+                    </select>
+                </div>
+                <div id="blocks" class="col-sm-10 text-center">
+                    <br>
+                    <b>CHOOSE BLOCKS</b>
+                    <br>
+                    <table class="table table-light text-center">
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="I">
+                                <label for="I">The 'I' block</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="J">
+                                <label for="J">The 'J' block</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="L">
+                                <label for="L">The 'L' block</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="O">
+                                <label for="O">The 'O' block</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="S">
+                                <label for="S">The 'S' block</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="T">
+                                <label for="T">The 'T' block</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Z">
+                                <label for="Z">The 'Z' block</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <canvas id="I" width="80" height="20"></canvas>
+                            </td>
+                            <td>
+                                <canvas id="J" width="60" height="40"></canvas>
+                            </td>
+                            <td>
+                                <canvas id="L" width="60" height="40"></canvas>
+                            </td>
+                            <td>
+                                <canvas id="O" width="40" height="40"></canvas>
+                            </td>
+                            <td>
+                                <canvas id="S" width="60" height="40"></canvas>
+                            </td>
+                            <td>
+                                <canvas id="T" width="60" height="40"></canvas>
+                            </td>
+                            <td>
+                                <canvas id="Z" width="60" height="40"></canvas>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div id="button1" class="col-sm-6 text-center">
+                    <button type="button" class="btn btn-primary" onclick="play()">Play tetris!</button>
+                </div>
+                <div id="button2" class="col-sm-6 text-center">
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='tetris-rezultati.html'">Show results!</button>
+                </div>
+            </div>
+            <div class="row">
+                <div id="footer" class="col-sm-12 text-center">
+                    <p>COPYRIGHT: Luka Kaludjerovic 2021/0041, May 2024</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

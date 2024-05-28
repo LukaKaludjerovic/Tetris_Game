@@ -1,0 +1,20 @@
+#header {
+    background-color: lightpink;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#footer {
+    background-color: lightpink;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#all-results, #personal-result, #button {
+    background-color: lightpink;
+}
+
+#name, #score {
+    font-size: 25px;
+}
